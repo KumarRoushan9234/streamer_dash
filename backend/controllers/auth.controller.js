@@ -81,7 +81,7 @@ export const verifyEmail = async (req, res) => {
   }
 };
 
-// add resend otp
+
 
 export const loginUser = async (req, res) => {
   console.log("Request Body (login):", req.body);
@@ -154,3 +154,6 @@ export const checkAuth = async (req, res) => {
     return res.status(500).json({ message: error.message, success: false });
   }
 };
+
+
+// add resend otp
